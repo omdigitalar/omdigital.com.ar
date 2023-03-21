@@ -55,6 +55,27 @@ body {
     background-repeat: no-repeat;
 }
 
+@media (max-width: 768px) {
+    body {
+        background-position: center top;
+        background-size: 300%;
+    };
+}
+
+@media (max-width: 768px) {
+    body {
+        background-position: center top;
+        background-size: 300%;
+    };
+}
+
+@media (max-width: 400px) {
+    body {
+        background-position: center top;
+        background-size: 350%;
+    };
+}
+
 /* font-family: 'Montserrat', sans-serif;*/
 p {
     color: white;
@@ -147,6 +168,7 @@ nav {
 /*FIN DE HEADER*/
 
 /*nuevo menu boostrap*/
+
 
 .nav-link {
     color: #61ce70;
@@ -294,14 +316,23 @@ nav {
 /*portada*/
 
 .portadaPagina {
-    background-image: url("../assets/img/fondo-inicio.jpg");
+    /* background-image: url("../assets/img/fondo-inicio.jpg");
     color: white;
     width: 100%;
     height: 700px;
     font-family: 'Montserrat', sans-serif;
     background-position: center center;
     background-size: cover;
-    margin-top: -60px;
+    margin-top: -60px; */
+
+    color: white;
+    width: 100%;
+    height: 700px;
+    font-family: 'Montserrat', sans-serif;
+    background-position: center center;
+    background-size: cover;
+    padding-left: 150px;
+    /* margin-top: -60px; */
 }
 
 .portada-pagina-contacto {
@@ -318,7 +349,11 @@ nav {
 
 @media (max-width: 768px) {
     .portada-pagina-contacto {
-        padding-left: 50px;
+        padding: 0px 30px;
+    }
+
+    .portada-pagina-contacto h1 {
+        font-size: 40px;
     }
 
     .portada-pagina-contacto h2 {
@@ -329,40 +364,47 @@ nav {
         font-size: 20px;
     }
 
-    .logo {
-        max-width: 150px;
 
-    }
 }
 
+@media (max-width: 425px) {
+    img, svg {
+        vertical-align: middle;
+        max-width: 150px;
+    }
 
+    .portada-pagina-contacto h1 {
+        font-size: 30px;
+    }
+}
 
 .tituloPagina {
     margin-bottom: 50px;
     font-size: 50px;
     padding-top: 220px;
+    font-weight: 800;
 }
 
 hr {
     border-color: #61ce70;
-    border-width: 2px 0px 0px 0px;
-    margin-top: -70px;
-    margin-left: 150px;
-    margin-right: 150px;
+    border-width: 3px 0px 0px 0px;
+    padding-right: 150px;
 }
 
+.boton-portada {
+    padding-bottom: 100px;
+}
 .info-de-contacto {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: inherit;
-    margin-top: -70px;
-    margin-left: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.icono-y-dato {
+    display: inline-flex;
+    gap: 10px;
     align-items: center;
 }
 
-.info-de-contacto p {
-    margin-right: 200px;
-}
 
 .ico-datos-contacto {
     width: 30px;
@@ -408,13 +450,15 @@ hr {
 /*seccion Servicios */
 
 .servicios .bloque-servicios {
-    width: 750px;
+    width: 100%;
+    padding: 0px 300px;
     text-align: left;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     font-weight: 400;
+    background-color: black;
 }
 
 
@@ -430,6 +474,7 @@ hr {
 
 .ultimos-trabajos {
     padding-top: 100px;
+    background-color: black;
 }
 
 .ultimos-trabajos h2 {
@@ -481,14 +526,25 @@ hr {
     margin-bottom: 50px;
 }
 
+@media (max-width: 768px) {
+.ultimos-trabajos {
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
+.trabajo1 img, .trabajo2 img, .trabajo3 img, .trabajo4 img {
+    margin: 0px;
+    padding: 0px;
+}
+}
 /*fin seccion ultimos trabajos*/
 
 /*SECCION CLIENTES*/
 
 .clientes {
     text-align: center;
-    margin-top: 100px;
+    padding-top: 100px;
+    background-color: black;
 }
 
 .logos-clientes {
@@ -504,15 +560,37 @@ hr {
 
 .adaptamos {
     text-align: center;
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 100px;
-    margin-top: 50px;
+    background-color: black;
 }
+
+.adaptamos-2 {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    background-color: black;
+}
+
 
 .adaptamos h2 {
     margin: 0px 0px 50px 0px;
 }
 
+@media (max-width: 768px) {
+.adaptamos, .adaptamos-2 {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: black;
+}
+
+.adaptamos h2, .adaptamos-2 h2 {
+    margin: 0px 0px 50px 0px;
+    font-size: 1.5rem;
+    padding: 0px 30px;
+}
+}
 
 /*BARRA DE TITULO.barra-de-titulo {
     border-width: 0px 0px 6px 0px;
@@ -578,10 +656,10 @@ footer h3 {
     padding-top: 50px;
 }
 
-.section-presentacion {
-    margin-left: 150px;
-    margin-bottom: 50px;
-    margin-right: 150px;
+.section-presentacion, .cv {
+    padding: 50px 150px 150px 150px;
+    background-color: black;
+    width: 100%;
 }
 
 .section-presentacion h4 {
@@ -596,18 +674,18 @@ footer h3 {
 
 .grid-proyectos {
     display: grid;
-    width: 90%;
+    width: 100%;
     grid-template-columns: 1fr 1fr;
     text-align: center;
     place-items: center;
     justify-content: center;
     align-items: center;
+    background-color: black;
+    padding: 0px 150px;
 }
 
 .celda-proyecto {
     display: grid;
-    margin-left: auto;
-    margin-right: auto;
     max-width: 500px;
     font-family: 'Montserrat', sans-serif;
     color: #FFFF;
@@ -629,10 +707,8 @@ footer h3 {
 }
 
 .cierre-proyectos {
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-top: 100px;
-    padding-bottom: 100px;
+padding: 150px;
+background-color: black;
 }
 
 .cierre-proyectos h3 {
@@ -652,8 +728,9 @@ footer h3 {
 .cv {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 20px 50px;
+    padding: 20px 200px 100px 50px;
     background-color: black;
+    width: 100%;
 }
 
 .foto-manu {
@@ -661,6 +738,12 @@ footer h3 {
     margin-left: -70px;
     margin-top: -45px;
     box-shadow: 5px 5px 10px rgb(16, 16, 16);
+}
+
+.div-foto {
+    justify-content: end;
+    padding: 50px 50px 0px 0px;
+    display: flex;
 }
 
 .nombre-manu {
@@ -671,6 +754,52 @@ footer h3 {
     font-size: 1.5rem;
 }
 
+@media (max-width: 768px) {
+    .cv {
+        padding: 100px;
+        grid-template-columns: 1fr;
+        
+    }
+
+    .foto-manu {
+        max-width: 300px;
+        height: auto;
+        justify-content: center;
+    }
+    .director {
+        font-size: 1rem;
+    }
+    .nombre-manu {
+        font-size: 2rem;
+    }
+    .div-foto {
+        justify-content: end;
+        padding: 100px 0px 0px 0px;
+        display: flex;
+    }
+
+    .presentacion-pagina {
+        padding-top: 50px;
+    }
+    
+    .section-presentacion, .cv {
+        background-color: black;
+        width: 100%;
+        margin: 0px;
+    }
+    .section-presentacion, .cv {
+        padding: 0px 40px;
+        background-color: black;
+        width: 100%;
+    }
+    
+.section-presentacion h4 {
+    margin:0px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+    
+}
 /*CONTACTO*/
 .contacto-data-form {
     display: grid;
@@ -717,16 +846,63 @@ footer h3 {
 
 .cards-servicios {
     display: flex;
-    flex-direction: row;
+    background-color: black;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+
 
 }
 
 .card-group {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 0px 150px;
+    margin: 0px;
+    gap: 40px;
+    padding: 20px 0px;
 }
 
 .card {
     max-width: 300px;
+    background-color: #0000;
+}
+
+.card-title {
+    color: #61ce70;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 0px;
+}
+
+.card-body {
+    max-width: 300px;
+    border-radius: 0px;
+    border:#61ce70 solid;
+    background-color: #0000;
+    padding: 20px 20px;
+}
+
+@media (max-width: 768px) {
+    .card-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0px;
+        gap: 40px;
+        padding: 20px 0px;
+    }
+}
+
+@media (max-width: 425px) {
+    .card-group {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0px;
+        gap: 40px;
+        padding: 20px 0px;
+    }
+}
+
+p {
+    margin:0px
 }
