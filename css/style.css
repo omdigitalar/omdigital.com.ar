@@ -367,7 +367,6 @@ hr {
 .ico-datos-contacto {
     width: 30px;
     height: 30px;
-    margin-right: 20px;
 }
 
 .portadaPagina .boton {
@@ -653,7 +652,6 @@ footer h3 {
 .cv {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 100px 150px 0px 150px;
     padding: 20px 50px;
     background-color: black;
 }
