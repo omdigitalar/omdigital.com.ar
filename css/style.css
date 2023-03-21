@@ -1,0 +1,734 @@
+/*RESET*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*COLOR DEL TEXTO SELECCIONADO*/
+
+html p::selection {
+    background-color: #61ce70;
+    color: rgb(15, 15, 15);
+}
+
+html h1::selection {
+    background-color: #61ce70;
+    color: rgb(15, 15, 15);
+}
+
+html h2::selection {
+    background-color: #61ce70;
+    color: rgb(15, 15, 15);
+}
+
+html h3::selection {
+    background-color: #61ce70;
+    color: rgb(15, 15, 15);
+}
+
+html h4::selection {
+    background-color: #61ce70;
+    color: rgb(15, 15, 15);
+}
+
+html a::selection {
+    background-color: #61ce70;
+    color: rgb(15, 15, 15);
+}
+
+html li::selection {
+    background-color: #61ce70;
+    color: rgb(15, 15, 15);
+}
+
+html .boton::selection {
+    background-color: #61ce70;
+    color: rgb(15, 15, 15);
+}
+
+body {
+    background-image: url("../assets/img/fondo-inicio.jpg");
+    background-color: rgba(0, 0, 0, 0.567);
+    background-position: center top;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* font-family: 'Montserrat', sans-serif;*/
+p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+    color: #61ce70;
+    font-family: 'Montserrat', sans-serif;
+}
+
+li {
+    color: #61ce70;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 0px 20px 0px 20px;
+    list-style: none;
+
+}
+
+h1 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+h2 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 37px;
+    font-weight: 800;
+    margin-left: 50px;
+
+}
+
+h3 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px 0px 20px 0px;
+    font-weight: 800;
+    font-size: 27px;
+
+}
+
+h4 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px 0px 20px 0px;
+    font-size: 30px;
+
+}
+
+
+/*HEADER*/
+
+/* header {
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 50px 0px 50px;
+} */
+
+.item-menu {
+    display: inline-block;
+}
+
+
+.logoPrincipal {
+    display: inline;
+}
+
+nav {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 00;
+    display: inline;
+    padding: 0px 20px 0px 20px;
+}
+
+.menu-web ul {
+    display: inline;
+}
+
+/*FIN DE HEADER*/
+
+/*nuevo menu boostrap*/
+
+.nav-link {
+    color: #61ce70;
+}
+
+.navbar-nav .nav-link.active {
+    color: white;
+}
+
+.navbar-expand-lg .navbar-collapse { 
+    justify-content: flex-end;
+}
+
+.navbar-toggler {
+    color: #61ce70;
+}
+
+.navbar-toggler:hover {
+    text-decoration: none;
+    background: #0000;
+    border:#61ce70 solid 2px;
+}
+
+.navbar-toggler {
+    text-decoration: none;
+    background: #0000;
+    border:#61ce70 solid 2px;
+    color: #61ce70;
+}
+
+
+/*MENU RESPONSIVE*/
+
+.nav-wraper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+    padding: 0px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.menu ul li a {
+    text-decoration: none;
+}
+
+
+.menu-hamburguesa {
+    display: none;
+}
+
+#toggle {
+    display: none;
+}
+
+.material-icons {
+    display:none;
+}
+
+@media (max-width: 768px) {
+    nav .menu {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+
+    }
+
+    .menu ul li a {
+        font-size: 13px;
+    }
+
+    nav label {
+        display: inline-flex;
+        color: white;
+        cursor: pointer;
+    }
+    
+    nav #toggle:checked~.menu {
+        height: 100%;
+        margin-top: 200px;
+        background-color: rgba(38, 38, 38, 0.657);
+    }
+    
+    .logo {
+        margin-left: -15px;
+    }
+    .material-icons {
+        display: inline-flex;
+    }
+}
+
+
+
+@media (max-width: 320px) {
+    nav {
+        padding:0px
+    }
+}
+/*fin menu responsive*/
+
+
+/*boton general*/
+.link-boton {
+    padding: 10px 20px 10px 20px;
+    color: #61ce70;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    border: #61ce70 solid 2px;
+    background-color: #00000000;
+    box-shadow: 2px 2px 20px rgba(43, 43, 43, 0.685);
+    margin-left: 0px;
+}
+
+.link-boton:hover {
+    padding: 10px 20px 10px 20px;
+    color: #61ce70;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    border: #FFFF solid 2px;
+    background-color: #00000000;
+    box-shadow: 2px 2px 20px rgba(43, 43, 43, 0.685);
+}
+
+/*fin boton general*/
+
+/*portada*/
+
+.portadaPagina {
+    background-image: url("../assets/img/fondo-inicio.jpg");
+    color: white;
+    width: 100%;
+    height: 700px;
+    font-family: 'Montserrat', sans-serif;
+    background-position: center center;
+    background-size: cover;
+    margin-top: -60px;
+}
+
+.portada-pagina-contacto {
+    /* background-image: url("../assets/img/fondo-inicio.jpg"); */
+    color: white;
+    width: 100%;
+    height: 700px;
+    font-family: 'Montserrat', sans-serif;
+    background-position: center center;
+    background-size: cover;
+    padding-left: 150px;
+    /* margin-top: -60px; */
+}
+
+@media (max-width: 768px) {
+    .portada-pagina-contacto {
+        padding-left: 50px;
+    }
+
+    .portada-pagina-contacto h2 {
+        font-size: 30px;
+    }
+
+    .portada-pagina-contacto h3 {
+        font-size: 20px;
+    }
+
+    .logo {
+        max-width: 150px;
+
+    }
+}
+
+
+
+.tituloPagina {
+    margin-bottom: 50px;
+    font-size: 50px;
+    padding-top: 220px;
+}
+
+hr {
+    border-color: #61ce70;
+    border-width: 2px 0px 0px 0px;
+    margin-top: -70px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.info-de-contacto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: inherit;
+    margin-top: -70px;
+    margin-left: 150px;
+    align-items: center;
+}
+
+.info-de-contacto p {
+    margin-right: 200px;
+}
+
+.ico-datos-contacto {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.portadaPagina .boton {
+    margin-left: 150px;
+    margin-bottom: 50px;
+}
+
+/* button {
+    margin: 20px 0px 20px 0px;
+} */
+
+/*fin portada*/
+
+
+/*SECCION IMPRONTA*/
+
+.impronta {
+    box-sizing: 100%;
+    display: inline-flex;
+    width: 100%;
+    height: 700px;
+    padding: 100px;
+    background-color: rgb(15, 15, 15);
+}
+
+.nuestra-impronta {
+    width: 50%;
+    margin-bottom: 0px;
+    margin-left: 150px;
+    padding-top: 0px;
+}
+
+.diferenciales {
+    width: 50%;
+    text-align: right;
+    margin-right: 100px;
+}
+
+/*seccion Servicios */
+
+.servicios .bloque-servicios {
+    width: 750px;
+    text-align: left;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+}
+
+
+.listado-servicios li {
+    text-align: center;
+    font-weight: 400;
+}
+
+
+/*fin seccion Servicios */
+
+/*seccion ultimos trabajos*/
+
+.ultimos-trabajos {
+    padding-top: 100px;
+}
+
+.ultimos-trabajos h2 {
+    margin-bottom: 50px;
+    margin-left: 220px;
+}
+
+.trabajos-index {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+
+.trabajo1 img {
+    display: grid;
+    margin-left: auto;
+    margin-right: -10px;
+    max-width: 500px;
+    box-shadow: 5px 5px 30px rgb(17 17 17);
+    text-align: center;
+}
+
+.trabajo2 img {
+    display: grid;
+    margin-left: -30px;
+    margin-right: auto;
+    margin-top: -70px;
+    max-width: 500px;
+    box-shadow: 5px 5px 30px rgb(17, 17, 17);
+}
+
+.trabajo3 img {
+    display: grid;
+    margin-left: auto;
+    margin-right: -60px;
+    max-width: 500px;
+    box-shadow: 5px 5px 30px rgb(17, 17, 17);
+}
+
+.trabajo4 img {
+    display: grid;
+    margin-left: 0px;
+    margin-top: -200px;
+    margin-right: auto;
+    max-width: 500px;
+    box-shadow: 5px 5px 30px rgb(17, 17, 17);
+    margin-bottom: 50px;
+}
+
+
+/*fin seccion ultimos trabajos*/
+
+/*SECCION CLIENTES*/
+
+.clientes {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.logos-clientes {
+    width: 100%;
+    padding: 30px;
+}
+
+.logo-clientes:hover img {
+    opacity: 70%;
+}
+
+/*cierre de inicio*/
+
+.adaptamos {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    margin-top: 50px;
+}
+
+.adaptamos h2 {
+    margin: 0px 0px 50px 0px;
+}
+
+
+/*BARRA DE TITULO.barra-de-titulo {
+    border-width: 0px 0px 6px 0px;
+    line-height: 30px;
+    color: #61ce70;
+    border-color: #61ce70;
+    padding-right: 85%;
+
+} */
+
+.ver-mas-proyectos {
+    text-align: center;
+}
+
+
+
+/*COMIENZO FOOTER*/
+
+footer {
+    background-color: white;
+    padding: 50px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px 50px 50px;
+}
+
+footer p {
+    color: black;
+    line-height: 1.5rem;
+    font-size: 14px;
+}
+
+footer h3 {
+    color: black;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    footer img {
+        margin-left: -9px;
+    }
+}
+
+/*pagina proyectos y otras */
+
+.titulo-pagina-h2 {
+    padding-top: 300px;
+    font-size: 40px;
+    margin: 0px;
+}
+
+.bajada-pagina-h3 {
+    margin-left: 0px;
+}
+
+.presentacion-pagina {
+    padding-top: 50px;
+}
+
+.section-presentacion {
+    margin-left: 150px;
+    margin-bottom: 50px;
+    margin-right: 150px;
+}
+
+.section-presentacion h4 {
+    color: #61ce70;
+    margin-right: 300px;
+}
+
+.section-presentacion div p {
+    font-weight: 300%;
+}
+
+
+.grid-proyectos {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.celda-proyecto {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFF;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.celda-proyecto img {
+    max-width: 500px;
+}
+
+.celda-proyecto iframe {
+    max-width: 500px;
+}
+
+.celda-proyecto figcaption {
+    padding-bottom: 50px;
+    margin-top: 20px;
+}
+
+.cierre-proyectos {
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+.cierre-proyectos h3 {
+    margin-bottom: 50px;
+}
+
+.cierre-proyectos hr {
+    border-width: 6px 0px 0px 0px;
+    border-color: #61ce70;
+    margin-left: 0px;
+    margin-right: 90%;
+    ;
+}
+
+/*pagina acerca de*/
+
+.cv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 100px 150px 0px 150px;
+    padding: 20px 50px;
+    background-color: black;
+}
+
+.foto-manu {
+    max-width: 500px;
+    margin-left: -70px;
+    margin-top: -45px;
+    box-shadow: 5px 5px 10px rgb(16, 16, 16);
+}
+
+.nombre-manu {
+    font-size: 2.5rem;
+}
+
+.director {
+    font-size: 1.5rem;
+}
+
+/*CONTACTO*/
+.contacto-data-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px 150px;
+    background-color: black;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .contacto-data-form {
+        grid-template-columns: 1fr;
+        margin: 0;
+        padding: 20px;
+    }
+}
+
+.info-de-contact-1col {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+.ico-data {
+    display: flex;
+    margin: 10px 0px;
+}
+
+.contacto-div {
+    padding: 10px 0px 10px 0px;
+}
+
+.form-label {
+    color: white;
+}
+
+.form-control {
+    border: 2px solid;
+    border-color: #61ce70;
+    border-radius: 0px;
+    background-color: #0000;
+    color: #61ce70;
+}
+
+.cards-servicios {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.card-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0px 150px;
+}
+
+.card {
+    max-width: 300px;
+}
