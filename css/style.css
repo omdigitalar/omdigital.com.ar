@@ -344,6 +344,7 @@ nav {
     background-position: center center;
     background-size: cover;
     padding-left: 150px;
+    padding-right: 150px;
     /* margin-top: -60px; */
 }
 
@@ -470,6 +471,11 @@ hr {
     .nuestra-impronta, .diferenciales {
         text-align: start;
         padding: 40px;
+    }
+    .nuestra-impronta h2 {
+        margin: 0px;
+        padding: 0px;
+        font-size: 40px;
     }
 }
 @media (max-width: 425px) {
@@ -1007,7 +1013,7 @@ background-color: black;
     font-size: 1.5rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .cv {
         padding: 100px;
         grid-template-columns: 1fr;
@@ -1015,7 +1021,8 @@ background-color: black;
     }
 
     .foto-manu {
-        max-width: 300px;
+        max-width: 100%;
+        padding: 0px 60px;
         height: auto;
         justify-content: center;
     }
@@ -1026,8 +1033,9 @@ background-color: black;
         font-size: 2rem;
     }
     .div-foto {
-        justify-content: end;
-        padding: 100px 0px 0px 0px;
+        max-width: 100%;
+        justify-content: center;
+        padding: 100px 60px 0px 60px;
         display: flex;
     }
 
@@ -1050,6 +1058,11 @@ background-color: black;
     margin:0px;
     font-weight: 600;
     padding-bottom: 30px;
+    font-size: 30px;
+}
+
+.section-presentacion div h4 {
+    font-size: 25px;
 }
     
 }
