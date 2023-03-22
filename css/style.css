@@ -417,7 +417,7 @@ hr {
     margin-bottom: 50px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 800px) {
     .info-de-contacto {
     display: grid;
     grid-template-columns: 1fr;
@@ -458,6 +458,20 @@ hr {
     margin-right: 100px;
 }
 
+@media (max-width: 800px) {
+    .impronta, .nuestra-impronta, .diferenciales {
+        display:grid;
+        grid-template-columns: 1fr;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .nuestra-impronta, .diferenciales {
+        text-align: start;
+        padding: 40px;
+    }
+}
 @media (max-width: 425px) {
 .impronta, .nuestra-impronta, .diferenciales {
     display:grid;
@@ -512,7 +526,7 @@ hr {
     
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .servicios {
         background-color: black;
     }
@@ -544,6 +558,11 @@ hr {
     .servicios .bloque-servicios li {
         text-align: center;
     
+    }
+
+    .ver-mas-proyectos {
+        text-align: center;
+        padding-top: 50px;
     }
     }
     
@@ -663,6 +682,51 @@ ol, ul {
     box-shadow: 5px 5px 30px rgb(17, 17, 17);
     margin-bottom: 50px;
 }
+
+@media (max-width: 800px) {
+    .ultimos-trabajos {
+        width: 100%;
+        padding:0px;
+        margin: 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .ultimos-trabajos div {
+        width: 100%;
+    }
+    .trabajos-index {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .trabajo1 img, .trabajo2 img, .trabajo3 img, .trabajo4 img {
+        margin: 0px;
+        padding: 0px;
+        max-width: 450px;
+        box-shadow: 10px 10px 4px rgb(14, 14, 14);
+    }
+    
+    .trabajo1, .trabajo2, .trabajo3, .trabajo4 {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .ultimos-trabajos h2 {
+        width: 100%;
+        margin: 0px;
+        text-align: center;
+        padding: 20px;
+        font-size: 25px;
+        width: 100%;
+    }
+    .clientes div h2 {
+        font-size: 20px;
+        margin: 0px;
+        padding: 0px;
+    }
+    }
 
 @media (max-width: 425px) {
 .ultimos-trabajos {
