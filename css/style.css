@@ -376,6 +376,7 @@ nav {
     .portada-pagina-contacto h1 {
         font-size: 30px;
     }
+
 }
 
 .tituloPagina {
@@ -416,6 +417,17 @@ hr {
     margin-bottom: 50px;
 }
 
+@media (max-width: 425px) {
+    .info-de-contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px 0px;
+}
+.boton-portada {
+    padding-bottom: 30px;
+}
+}
+
 /* button {
     margin: 20px 0px 20px 0px;
 } */
@@ -429,7 +441,6 @@ hr {
     box-sizing: 100%;
     display: inline-flex;
     width: 100%;
-    height: 700px;
     padding: 100px;
     background-color: rgb(15, 15, 15);
 }
@@ -445,6 +456,32 @@ hr {
     width: 50%;
     text-align: right;
     margin-right: 100px;
+}
+
+@media (max-width: 425px) {
+.impronta, .nuestra-impronta, .diferenciales {
+    display:grid;
+    grid-template-columns: 1fr;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.nuestra-impronta, .diferenciales {
+    text-align: start;
+    padding: 40px;
+}
+
+.impronta {
+    background-color: black;
+}
+
+.nuestra-impronta h2 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+}
+
 }
 
 /*seccion Servicios */
@@ -467,6 +504,107 @@ hr {
     font-weight: 400;
 }
 
+.adaptamos3 {
+    text-align: center;
+    background-color: black;
+    margin: 0px;
+    padding: 20px;
+    
+}
+
+@media (max-width: 768px) {
+    .servicios {
+        background-color: black;
+    }
+    
+    .servicios .bloque-servicios {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 0px;
+    }
+    
+    .listado-servicios ul {
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    ol, ul {
+        padding-left: 0px;
+    }
+    
+    .adaptamos h3 {
+        font-size: 20px;
+    }
+    
+    .adaptamos h4 {
+        font-size: 20px;
+    }
+    
+    .servicios .bloque-servicios li {
+        text-align: center;
+    
+    }
+    }
+    
+
+@media (max-width: 425px) {
+.servicios {
+    background-color: black;
+}
+
+.adaptamos3 {
+    text-align: center;
+    background-color: black;
+    margin: 0px;
+    padding: 20px;
+    
+}
+
+.adaptamos3 h3 {
+    font-size: 20px;
+
+}
+
+.ver-mas-proyectos {
+    text-align: center;
+    padding-top: 35px;
+}
+
+.adaptamos3 h4 {
+    font-size: 20px;
+}
+
+.servicios .bloque-servicios {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 0px;
+}
+
+.listado-servicios ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+ol, ul {
+    padding-left: 0px;
+}
+
+.adaptamos h3 {
+    font-size: 20px;
+}
+
+.adaptamos h4 {
+    font-size: 20px;
+}
+
+.servicios .bloque-servicios li {
+    text-align: center;
+
+}
+}
+
 
 /*fin seccion Servicios */
 
@@ -479,7 +617,7 @@ hr {
 
 .ultimos-trabajos h2 {
     margin-bottom: 50px;
-    margin-left: 220px;
+    padding-left: 220px;
 }
 
 .trabajos-index {
@@ -524,6 +662,51 @@ hr {
     max-width: 500px;
     box-shadow: 5px 5px 30px rgb(17, 17, 17);
     margin-bottom: 50px;
+}
+
+@media (max-width: 425px) {
+.ultimos-trabajos {
+    width: 100%;
+    padding:0px;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.ultimos-trabajos div {
+    width: 100%;
+}
+.trabajos-index {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.trabajo1 img, .trabajo2 img, .trabajo3 img, .trabajo4 img {
+    margin: 0px;
+    padding: 0px;
+    max-width: 280px;
+    box-shadow: 10px 10px 4px rgb(14, 14, 14);
+}
+
+.trabajo1, .trabajo2, .trabajo3, .trabajo4 {
+    display: flex;
+    justify-content: center;
+}
+
+.ultimos-trabajos h2 {
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+    width: 100%;
+}
+.clientes div h2 {
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+}
 }
 
 @media (max-width: 768px) {
@@ -656,7 +839,13 @@ footer h3 {
     padding-top: 50px;
 }
 
-.section-presentacion, .cv {
+.section-presentacion {
+    padding: 50px 150px;
+    background-color: black;
+    width: 100%;
+}
+
+.cv {
     padding: 50px 150px 150px 150px;
     background-color: black;
     width: 100%;
