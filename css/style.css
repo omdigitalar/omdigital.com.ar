@@ -716,6 +716,18 @@ hr {
     margin: 0px;
     padding: 0px;
 }
+.ultimos-trabajos {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.trabajo1 img,
+.trabajo2 img,
+.trabajo3 img,
+.trabajo4 img {
+    margin: 0px;
+    padding: 0px;
+}
 }
 
 @media (max-width: 425px) {
@@ -771,20 +783,6 @@ hr {
     }
 }
 
-@media (max-width: 768px) {
-    .ultimos-trabajos {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .trabajo1 img,
-    .trabajo2 img,
-    .trabajo3 img,
-    .trabajo4 img {
-        margin: 0px;
-        padding: 0px;
-    }
-}
 
 /*fin seccion ultimos trabajos*/
 
@@ -1067,16 +1065,20 @@ footer h3 {
 
 .foto-manu {
     max-width: 500px;
+    height: auto;
     margin-left: -70px;
     margin-top: -45px;
     box-shadow: 5px 5px 10px rgb(16, 16, 16);
 }
 
-.div-foto {
-    justify-content: end;
-    padding: 50px 50px 0px 0px;
-    display: flex;
-}
+
+    .div-foto {
+        justify-content: end;
+        padding: 30px;
+        display: grid;
+        align-content: center;
+    }
+
 
 .nombre-manu {
     font-size: 2.5rem;
@@ -1146,6 +1148,37 @@ footer h3 {
 
 }
 
+@media (max-width: 425px) {
+    .cv {
+        padding: 20px;
+        grid-template-columns: 1fr;
+
+    }
+
+    .foto-manu {
+        max-width: 100%;
+        padding: 20px;
+        height: auto;
+        justify-content: center;
+        margin: 0px;
+    }
+
+    .director {
+        font-size: 1rem;
+    }
+
+    .nombre-manu {
+        font-size: 2rem;
+    }
+
+    .div-foto {
+        max-width: 100%;
+        justify-content: center;
+        padding: 0px 0px 0px 0px;
+        display: flex;
+        margin: 0px
+    }
+}
 /*CONTACTO*/
 .contacto-data-form {
     display: grid;
