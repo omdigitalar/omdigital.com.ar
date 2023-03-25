@@ -796,6 +796,12 @@ hr {
     background-color: black;
 }
 
+.clientes div h2 {
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
+}
+
 .logos-clientes {
     width: 100%;
     padding: 30px;
