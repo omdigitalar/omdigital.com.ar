@@ -1049,6 +1049,8 @@ footer h3 {
 .celda-proyecto figcaption {
     padding-bottom: 0px;
     margin-top: 0px;
+    font-size: 12px;
+    padding: 10px 0px;
 }
 
 }
