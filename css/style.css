@@ -815,7 +815,7 @@ hr {
     .trabajo2,
     .trabajo3,
     .trabajo4 {
-        display: flex;
+        display: grid;
         justify-content: center;
         width: 100%;
     }
