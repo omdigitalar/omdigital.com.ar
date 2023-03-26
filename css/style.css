@@ -150,6 +150,12 @@ nav {
 .nav-link {
     color: #61ce70;
 }
+.navbar-expand-lg .navbar-collapse {
+    background-color: rgba(24, 24, 24, 0.828);
+}
+.navbar-nav li a {
+    padding: 10px;
+}
 
 .navbar-nav .nav-link.active {
     color: white;
@@ -618,6 +624,7 @@ hr {
     background-color: black;
     display: grid;
     grid-template-columns: 1fr;
+    width: 100%;
 }
 
 .ultimos-trabajos h2 {
