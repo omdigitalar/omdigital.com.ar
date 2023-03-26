@@ -629,9 +629,16 @@ hr {
     width: 100%;
 }
 
+.ultimos-titulo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .ultimos-trabajos h2 {
     margin-bottom: 50px;
-    padding-left: 100px;
+    padding-right: 100px;
+    display: grid;
+    justify-content: end;
 }
 
 .trabajos-index {
@@ -711,6 +718,11 @@ hr {
         justify-content: center;
     }
 
+    .ultimos-titulo {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
     .ultimos-trabajos div {
         width: 100%;
     }
@@ -747,6 +759,8 @@ hr {
         padding: 20px;
         font-size: 25px;
         width: 100%;
+        display: grid;
+        justify-content: center;
     }
 
     .clientes div h2 {
@@ -782,6 +796,11 @@ hr {
         width: 100%;
     }
 
+    .ultimos-titulo {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
     .trabajos-index {
         display: grid;
         grid-template-columns: 1fr;
@@ -815,6 +834,8 @@ hr {
         padding: 20px;
         font-size: 25px;
         width: 100%;
+        display: grid;
+        justify-content: center;
     }
 
     .clientes div h2 {
@@ -1279,8 +1300,6 @@ footer h3 {
     align-content: center;
     justify-content: center;
     padding: 50px;
-
-
 }
 
 .card-group {
