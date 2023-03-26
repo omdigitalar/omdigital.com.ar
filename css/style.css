@@ -799,14 +799,25 @@ hr {
     .ultimos-titulo {
         display: grid;
         grid-template-columns: 1fr;
+        width: 100%;
     }
 
     .trabajos-index {
         display: grid;
         grid-template-columns: 1fr;
+        width: 100%;
         gap: 30px;
         margin: 0px;
         padding: 0px;
+    }
+
+    .trabajo1,
+    .trabajo2,
+    .trabajo3,
+    .trabajo4 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
 
     .trabajo1 img,
@@ -817,14 +828,6 @@ hr {
         padding: 0px;
         max-width: 280px;
         box-shadow: 10px 10px 4px rgb(14, 14, 14);
-    }
-
-    .trabajo1,
-    .trabajo2,
-    .trabajo3,
-    .trabajo4 {
-        display: flex;
-        justify-content: center;
     }
 
     .ultimos-trabajos h2 {
