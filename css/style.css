@@ -911,6 +911,7 @@ footer h3 {
     footer {
         flex-direction: column;
         align-items: start;
+        width: 100%;
     }
 
     footer img {
